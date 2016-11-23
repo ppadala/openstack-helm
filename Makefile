@@ -1,4 +1,4 @@
-.PHONY: $(shell find * -type d -depth 0)
+.PHONY: $(shell find . -maxdepth 1 -mindepth 1 -type d)
 
 all: openstack europe-example-region
 
